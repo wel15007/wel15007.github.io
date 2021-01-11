@@ -1,34 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
-
-img {
-    max-width: 100%;
+h1, h2 {
+    font-family: "Playfair Display", Arial, serif;
+}
+body {
+    font-family: "Zilla Slab", Helvetica, sans-serif;
+}
+#portal-home {
+    max-width: 800px;
+    margin: 0 auto;
+}
+header, footer {
+    background-color: #AED9E0;
+}
+header img {
     padding: .5em;
 }
-
-header {
-    background-color: #AED9E0;
+header h1 {
     text-align: center;
+    padding-left: 100px;
 }
-
-header img {
+main {
+    padding: 0 15px;
+}
+main h2 {
+    border-bottom: 1px solid black;
+}
+#profile_picture {
     float: right;
 }
-
-body {
-    font-family: "Zilla Slab", Arial, sans-serif;
-}
-
-h1,
-h2 {
-    font-family: "Playfair Display", Helvetica, serif;
-}
-
 footer {
-    background-color: #AED9E0;
     text-align: center;
 }
-
-#currentdate {
-    text-align: center;
+footer p.copyright {
+    margin-bottom: 10px;
+}
+footer p.lastUpdated {
+    color: yellow;
+    font-size: .8em;
+    margin-top: 0;
 }

@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:description"
-        content="Assignment Portal for Tyler Welch in WDD 230: Web Frontend Development at Brigham Young University-Idaho">
-    <title>Tyler Welch|Course Portal</title>
-    <link rel="stylesheet" href="css/portal.css">
-</head>
-
-<body>
-    <header>
-        <h1>Tyler Welch<img src="10383742_632021063586049_2037587401067342336_o.jpg" alt="Image of Tyler Welch"></h1>
-    </header>
-    <main>
-        <div></div>
-        <h2>CIT 230: Assignment Portal</h2>
-        <hr>
-        <ul>
-            <li>Future assignments will be listed here</li>
-        </ul>
-    </main>
-    <footer>
-        <p>&copy; 2021 | Tyler Welch | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-        <p id="currentdate"></p>
-    </footer>
-    <script src="js/currentdate.js"></script>
-</body>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Assignment Portal for Tyler Welch in WDD 230: Web Frontend Development at Brigham Young University-Idaho">
+        <title>Tyler Welch|Course Portal</title>
+        <link rel="stylesheet" href="css/portal.css">
+        <script src="js/currentdate.js"></script>
+    </head>
+    <body>
+        <div class="portal-home">
+            <header>
+                <img src="10383742_632021063586049_2037587401067342336_o.jpg" alt="Image of Tyler Welch" id="profile_picture">
+                <h1>Tyler Welch</h1>
+            </header>
+            <main>
+                <h2>CIT 230: Assignment Portal</h2>
+                <ul>
+                    <li>Lesson 02: <a href="#">Assignment Link</a></li>
+                    <li>Lesson 03: <a href="#">Assignment Link</a></li>
+                    <li>Lesson 04: <a href="#">Link</a> | <a href="#">Link</a></li>
+                </ul>
+            </main>
+            <footer>
+                <p class="copyright">&copy; <span id="copyrightYear"></span> | Tyler Welch | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+                <p class="lastUpdated">Last Updated: <span id="lastUpdatedDate"></span></p>
+            </footer>
+        </div>
+    </body>
 </html>
