@@ -5,6 +5,8 @@ h1, h2 {
 }
 body {
     font-family: "Zilla Slab", Helvetica, sans-serif;
+    max-width: 800px;
+    margin: auto;
 }
 #portal-home {
     max-width: 800px;
