@@ -3,9 +3,13 @@ header {
     margin: 0 auto;
     text-align: center;
 }
+body {
+    background-color: #eaeff3af;
+}
 div {
     max-width: 200px;
     border: 1px #d8d8d8;
+    border-style: solid;
 }
 img {
     margin: 0 auto;
@@ -16,12 +20,14 @@ body {
 .signUpButton {
     margin: 0 auto;
     box-shadow: #cbcbcb;
+    border-style: solid;
+    border-style: 1px #cbcbcb;
     
 }
 .signUpButtonForBuisness {
     background-color: #ffcf2d;
     box-shadow: #efc128;
-    border: 1px #d8d8d8;
+    border-style: 1px #efc128;
 }
 h1, h2 {
     color:  #12aaeb;
