@@ -15,12 +15,33 @@ body {
 }
 .signUpButton {
     margin: 0 auto;
+    box-shadow: #cbcbcb;
     
 }
 .signUpButtonForBuisness {
     background-color: #ffcf2d;
+    box-shadow: #efc128;
     border: 1px #d8d8d8;
 }
 h1, h2 {
     font-style:  #12aaeb;
+}
+.footer {
+    box-shadow: #d1e8f8;
+}
+main {
+    grid-template-columns: repeat(9, 1fr );
+    grid-gap: 1em;
+}
+
+#personal {
+    grid-column: 2 / 4;
+}
+
+#mostPopular {
+    grid-column: 5 / 7;
+}
+
+#enterprise {
+    grid-column: 8 / 10;
 }
