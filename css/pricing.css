@@ -5,6 +5,7 @@ header {
 }
 div {
     max-width: 200px;
+
 }
 img {
     margin: 0 auto;
@@ -21,5 +22,5 @@ body {
     border: 1px #d8d8d8;
 }
 h1, h2 {
-    font-color: #12aaeb;
+    font-style:  #12aaeb;
 }
