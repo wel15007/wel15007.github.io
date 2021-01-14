@@ -11,7 +11,7 @@ header, footer {
 
 body {
     font-family: "Zilla Slab", Helvetica, sans-serif;
-    max-width: 1350px;
+    max-width: 1150px;
     margin: 0 auto;
 }
 main {
@@ -21,8 +21,9 @@ main {
     margin: 0 auto;
 }
 img {
-    margin: 0 auto;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 a:hover {
     color: #FFA69E;
