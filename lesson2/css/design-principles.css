@@ -8,7 +8,15 @@ header, footer {
     text-align: center;
     background-color: #AED9E0;
 }
-
+h3 {
+    background-color: #AED9E0;
+    color: black;
+    text-align: left;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 0px;
+    padding: 0.5em;
+}
 body {
     font-family: "Zilla Slab", Helvetica, sans-serif;
     max-width: 1150px;
@@ -34,7 +42,6 @@ main section {
 	margin: 0.5em;
     border: 1px solid black;
     border-radius: 15px;
-	padding: 0.5em;
     background-color: #5E6472;
     color: #FAF3DD;
 }
