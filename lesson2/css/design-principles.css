@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+h1, h2 {
+    font-family: "Playfair Display", Airal, serif;
+    text-align: cener;
+}
+header, footer {
+    text-align: center;
+    background-color: #AED9E0;
+}
+
+body {
+    font-family: "Zilla Slab", Helvetica, sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+    font-size: 0.8rem;
+    margin: 0 auto;
+}
+img {
+    margin: 0 auto;
+    
+}
+a:hover {
+    color: #FFA69E;
+    background-color: blue;
+}
+
+main section {
+	margin: 0.5em;
+    border: 1px solid black;
+    border-radius: 15px;
+	padding: 0.5em;
+    background-color: #5E6472;
+    color: #FAF3DD;
+}
+
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 2;
+	}
+}
+
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 1;
+	}
+}

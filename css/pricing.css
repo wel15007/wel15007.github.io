@@ -6,7 +6,7 @@ header {
 body {
     background-color: #eaeff3af;
 }
-div {
+section {
     max-width: 200px;
     border: 1px #d8d8d8;
     border-style: solid;
@@ -36,18 +36,6 @@ h1, h2 {
     box-shadow: #d1e8f8;
 }
 main {
-    grid-template-columns: repeat(9, 1fr );
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
-}
-
-#personal {
-    grid-column: 2 / 4;
-}
-
-#mostPopular {
-    grid-column: 5 / 7;
-}
-
-#enterprise {
-    grid-column: 8 / 10;
 }
