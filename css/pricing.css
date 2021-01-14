@@ -5,7 +5,7 @@ header {
 }
 div {
     max-width: 200px;
-
+    border: 1px #d8d8d8;
 }
 img {
     margin: 0 auto;
