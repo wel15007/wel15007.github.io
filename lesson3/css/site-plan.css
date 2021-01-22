@@ -1,0 +1,131 @@
+h1, h2, h3 {
+    text-align: center;
+}
+header {
+    display: flex; 
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #FF7D00;
+}
+p {
+    padding: 0.5em;
+}
+body {
+    max-width: 960px;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+main {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 auto;
+}
+
+main section {
+    margin: 0.5em;
+    border: 1px solid black;
+}
+nav {
+    background-color: #9AD1D4;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 0.5em;
+}
+a:hover {
+    background-color:#D1495B;
+    color: #2A2B2E;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+}
+td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 0.5em;
+}
+.headerBackground {
+    background-color: #FF7D00;
+}
+.navigationBackground {
+    background-color: #9AD1D4;
+}
+.headerTextSample {
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive; 
+}
+.navigationTextSample {
+    font-family: 'Playfair Display', serif;
+}
+.navHoverBackground {
+    background-color: #D1495B;
+}
+.navHoverText {
+    background-color: #2A2B2E;
+    color: white;
+}
+.fullNavColors {
+    background-color: #D1495B;
+    color: #2A2B2E;
+}
+.sectionBackground {
+    background-color: #BDB3BA;
+}
+.footerBackground {
+    background-color: #FF7D00;
+}
+.footerTextSample {
+    font-family: 'Playfair Display', serif;
+}
+.h1TextSample {
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+}
+.h2TextSample {
+    font-size: 1.5em;
+    font-family: 'Playfair Display', serif;
+}
+.h3TextSample {
+    font-size: 1.17em;
+    font-family: 'Playfair Display', serif;
+}
+.bodyTextSample {
+    font-size: 18px;
+    font-family: 'Imbue', serif;
+}
+@media only screen and (min-width: 37.5em) {
+    main {
+        grid-template-columns: auto auto;
+    }
+    main section {
+        grid-column: span 2;
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(217px, 1fr));
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    main {
+        grid-template-columns: auto auto auto;
+    }
+    main section {
+        grid-column: span 1;
+    }
+
+}
