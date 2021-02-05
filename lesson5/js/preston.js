@@ -19,7 +19,7 @@ document.getElementById("currentdate").innerHTML = formatedDate.toLocaleString()
 const message = "Saturday = Preston Panckakes in the Park! 9:00am Saturday at the city park pavilion."
 
 const day = today.getDay();
-if(today.getDay() == 4) {
+if(today.getDay() == 5) {
     document.getElementById("pancakes").style.display = "block";
     document.getElementById("pancakes").innerHTML = message;
 }
