@@ -116,7 +116,7 @@ main div {
 }
 #summary {
     position: relative;
-    background: clear;
+    background-image: url("images/pexels-pixabay-325944.jpg");
 }
 #weatherSummary {
     position: abosolute;

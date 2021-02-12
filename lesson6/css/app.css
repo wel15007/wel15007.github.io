@@ -1,0 +1,43 @@
+#image {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 600px;
+}
+#image img {
+    width: 600px;
+}
+.mainimg {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    width: 600px;
+}
+.leftbutton{
+    width: 100px;
+    grid-column: 1;
+}
+.rightbutton {
+    width: 100px;
+    grid-column: 5;
+}
+.text {
+    grid-column: 2 / 3;
+}
+.paragraph {
+    grid-column: 2 / 4;
+}
+.firstimg {
+    width: 100px;
+    grid-column: 1;
+}
+.secondimg {
+    width: 100px;
+    grid-column: 2;
+}
+.thirdimg {
+    width: 100px;
+    grid-column: 3;
+}
+.fourthimg {
+    width: 100px;
+    grid-column: 4;
+}
