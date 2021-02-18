@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loader Example</title>
+    <link rel="stylesheet" href="ice-gallery.css">
+    <script>
+        window.addEventListener('load', (event)=> {
+            const images = document.querySelectorAll("[data-src]");
+            //console.log(images);
+
+            function preloadImage(img){
+                console.log("trying to load "+img);
+                const src= img.getAttribute("data-src");
+                if(!src){
+                    retrun;
+                }
+                img.src= src;
+            }
+            const imgOptions = {
+                threshold:0,
+                rootMargin: "0px 0px 200px 0px"
+            }
+            const imgObserver = new IntersectionObserver((entries,imgObserver) => {
+            console.log(entries);
+            entries.forEach(entry=>{
+                if(!entry.isIntersecting){
+                    return;
+                }
+                else{
+                    preloadImage(entry.target);
+                    imgObserver.unobserve(entry.target);
+                }
+            })
+        },imgOptions);
+        images.forEach(image=>{
+            imgObserver.observe(image);
+        })
+        });
+    </script>
+</head>
+<body>
+    <div class="first"><img src="" alt="" class="loading" data-src="http://unsplash.it/400"></div>
+    <div class="second"><img src="" alt="" class="loading" data-src="http://unsplash.it/401"></div>
+    <div class="third"><img src="" alt="" class="loading" data-src="http://unsplash.it/402"></div>
+    <div class="fourth"><img src="" alt="" class="loading" data-src="http://unsplash.it/403"></div>
+    <div class="fifth"><img src="" alt="" class="loading" data-src="http://unsplash.it/404"></div>
+    <div class="sixth"><img src="" alt="" class="loading" data-src="http://unsplash.it/405"></div>
+    <div class="seventh"><img src="" alt="" class="loading" data-src="http://unsplash.it/406"></div>
+    <div class="eight"><img src="" alt="" class="loading" data-src="http://unsplash.it/407"></div>
+    <div class="ninth"><img src="" alt="" class="loading" data-src="http://unsplash.it/408"></div>
+    <div class="tenth"><img src="" alt="" class="loading" data-src="http://unsplash.it/409"></div>
+</body>
+</html>
