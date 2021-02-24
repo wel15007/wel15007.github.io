@@ -8,6 +8,7 @@ table {
     border: 1px solid grey;
     border-collapse: collapse;
     width: 300px;
+    box-shadow: 10px 10px 15px #628ca6;
 }
 td,th {
     border: 1px solid grey;
