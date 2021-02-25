@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Watcher | Preston </title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/preston.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Imbue&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <script src="js/preston.js"></script>
+</head>
+<body>
+    <div id="bannermessage"><span id="pancakes"></span></div>
+    <header>
+        <section>
+            <img src="images/iconfinder_icon-ios7-eye_211739.png" alt="Picture of an eye">
+        </section>
+        <section id="headingText">
+            <h1>Sky Watcher</h1>
+            <div><h2>We watch the sky so you don't have to!</h2></div>
+        </section>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="menu">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form onsubmit="return validation()">
+            <div>
+                <p>
+                    <b id="star">*</b> represents required fields
+                </p>
+                <p>
+                    <label for="fullName">Full Name:
+                        <input type="text" minlength="5" pattern="[A-z\s]{5,}" required name="full name" title="You cannot use numbers or special characters, only letters">
+                        <b id="star">*</b>
+                    </label>
+                </p>
+                <p>
+                    <label for="email">Email:
+                        <input type="email" placeholder="example@example.com" name="email">
+                    </label>
+                </p>
+                <p>
+                    <label for="phoneNumber"> Phone Number: 
+                        <input type="tel" required name="phone number">
+                        <b id='star'>*</b>
+                    </label>
+                </p>
+                <p>
+                    <label for="zipCode">Zip Code: 
+                        <input type="number" required name="zip code">
+                        <b id="star">*</b>
+                    </label>  
+                </p>
+                <p>
+                    <label for="stormType">Storm Type: 
+                        <input type="text" list="stormList" name="storm type">
+                        <datalist id="stormList">
+                            <option>Flash Flood</option>
+                            <option>Hail</option>
+                            <option>Hurricane</option>
+                            <option>Thunderstorm</option>
+                            <option>Tornado</option>
+                        </datalist>
+                    </label>
+                </p>
+                <p>
+                   <label for="stormSeverity"> Storm Severity: (Range between 1 - 10)
+                       <input type="range" min="1" max="10" step="1" name="storm severity" list="severityList">
+                       <datalist id="severityList">
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                           <option value="6">6</option>
+                           <option value="7">7</option>
+                           <option value="8">8</option>
+                           <option value="9">9</option>
+                           <option value="10">10</option>
+                       </datalist>
+                   </label> 
+                </p>
+                <p>
+                    <label for="stormRegion">Storm Region: 
+                        <select name="storm region" id="storm">
+                            <option value="none" selected disabled hidden>Select Region ...</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <fieldset>
+                    <legend>Are you in danger?</legend>
+                    <label for="yes">Yes<input type="radio" id="radio1" value="yes" name="radio"></label>
+                    <label for="maybe">Maybe<input type="radio" id="radio2" value="maybe" name="radio"></label>
+                    <label for="no">No<input type="radio" id="radio3" value="no" name="radio"></label>
+                    </fieldset>
+                </p>
+                <p>
+                    <label for="additionalInformation">Addional Information or Comments: 
+                        <p id="textarea">
+                            <textarea name="additional information" rows="6"></textarea>
+                        </p>
+                    </label>
+                </p>
+                <p>
+                    <label for="formSubmission">
+                        <input type="submit"  id="submitBtn" name="formSubmission" value="Submit">
+                    </label>
+                </p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="copyright">&copy; Sky Watcher | Attributions | Tyler Welch</div>
+        <div class="currentDate"><span id="currentdate"></span></div>
+    </footer>
+</body>
+</html>

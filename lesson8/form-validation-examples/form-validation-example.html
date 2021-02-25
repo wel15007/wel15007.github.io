@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Example</title>
+</head>
+<body>
+    <form>
+        <div>
+            <!--Make a label for our first number and label it as number1-->
+            <label for="number1">How old are you?</label>
+
+            <!--Have the input type be a number, minimum age of 13 and maximum age of 120,
+                incrament the number by one, and give it an id of number1 and name of age-->
+            <input type="number" min="13" max="120" step="1" id="number1" name="age">
+        </div>
+        <div>
+            <!--Make a label for our first text field and label it as text1-->
+            <label for="text1">What is your favorite sport to watch?</label>
+
+            <!--Have the input type be a text, make it required, have a pattern,
+                give it a list called list1, and give it a name of sports-->
+            <input type="text" required pattern="[Ss]ocker|[Ff]ootball|[Hh]ockey|[Gg]olf|[Bb]asketball|[Bb]aseball" list="list1" name="sports">
+            <datalist id="list1">
+                <option>Socker</option>
+                <option>Football</option>
+                <option>Hockey</option>
+                <optoin>Golf</optoin>
+                <option>Basketball</option>
+                <option>Baseball</option>
+            </datalist>
+        </div>
+        <div id="usernameSection">
+            <!--Make a lable called text2 for our username-->
+            <label for="text2">Enter in a username</label>
+
+            <!--Make a text input, make it required, give it a name of username, make a 
+                placeholder called Username, give it a pattern only allowing 1 - 15 lowercase
+                letters, and give it an id of username, and give a custom error message stating the requirements for the username-->
+            <input type="text" required name="username" placeholder="Username" pattern="[a-z]{1,15}" id="username" title="Username should only contian 1-15 lowercase letters">
+        </div>
+        <div>
+            <!--Make a legend for our radio buttons-->
+            <legend>Are you interesting in learning more?</legend>
+            
+            <!--Make two radio buttons, make them required, give them the same name of interested, give them an id of radio1 and radio 2 respectively, give radio1 a value of yes
+                give radio2 a value of no, and then make a label for the radio buttons-->
+            <input type="radio" required name="interested" id="radio1" value="yes"><label for="radio1">Yes</label>
+            <input type="radio" required name="interested" id="radio2" value="no"><label for="radio2">No</label>
+            <input type="radio" required name="interested" id="radio3" value="maybe"><label for="radio3">Maybe</label>
+        </div>
+        <div>
+            <!--Make a label for text3 for our message-->
+            <label for="text3">Please leave a short message describing your experience!</label>
+            
+            <!--Make a textarea with an id of text3, a name of message, a maximum length of 150 characters, give it a placeholder of "Max: 150 characters", and give it 5 rows-->
+            <p>
+            <textarea id="text3" name="message" maxlength="150" placeholder="Max: 150 characters" rows="5"></textarea>
+            </p>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
