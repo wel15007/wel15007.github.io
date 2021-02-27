@@ -35,34 +35,36 @@
     </nav>
     <main>
         <form onsubmit="return validation()">
-            <div>
+            <div id="form">
                 <p>
                     <b id="star">*</b> represents required fields
                 </p>
-                <p>
+                <p id="personal"><h2>Personal Information</h2></p>
+                <p id="fullName">
                     <label for="fullName">Full Name:
                         <input type="text" minlength="5" pattern="[A-z\s]{5,}" required name="full name" title="You cannot use numbers or special characters, only letters">
                         <b id="star">*</b>
                     </label>
                 </p>
-                <p>
+                <p id="email">
                     <label for="email">Email:
                         <input type="email" placeholder="example@example.com" name="email">
                     </label>
                 </p>
-                <p>
+                <p id="phoneNumber">
                     <label for="phoneNumber"> Phone Number: 
                         <input type="tel" required name="phone number">
                         <b id='star'>*</b>
                     </label>
                 </p>
-                <p>
+                <p id="zip">
                     <label for="zipCode">Zip Code: 
                         <input type="number" required name="zip code">
                         <b id="star">*</b>
                     </label>  
                 </p>
-                <p>
+                <p><h2>Storm Information</h2></p>
+                <p id="stormType">
                     <label for="stormType">Storm Type: 
                         <input type="text" list="stormList" name="storm type">
                         <datalist id="stormList">
@@ -101,7 +103,7 @@
                         </select>
                     </label>
                 </p>
-                <p>
+                <p id="radioFormat">
                     <fieldset>
                     <legend>Are you in danger?</legend>
                     <label for="yes">Yes<input type="radio" id="radio1" value="yes" name="radio"></label>
@@ -112,7 +114,7 @@
                 <p>
                     <label for="additionalInformation">Addional Information or Comments: 
                         <p id="textarea">
-                            <textarea name="additional information" rows="6"></textarea>
+                            <textarea name="additional information" rows="6" cols="40"></textarea>
                         </p>
                     </label>
                 </p>
