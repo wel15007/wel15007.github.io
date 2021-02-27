@@ -190,15 +190,8 @@ input[type=number] {
 fieldset {
     border: 1px solid black;
     width: 200px;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     margin: 0 auto;
-}
-#radioFormat{
-    justify-content: center;
-    align-items: center;
-
 }
 #radio1, #radio2, #radio3 {
     padding: 1.5em;
