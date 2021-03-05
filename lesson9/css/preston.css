@@ -1,0 +1,382 @@
+body {
+    width: 100%;
+    font-family: 'Imbue', serif;
+    font-size: 18px;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+}
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+img {
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    padding: 1em;
+    background-color: #FF7D00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    padding: 0;
+    margin: 0;
+    background-color: #9AD1D4;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto;
+}
+nav ul li:first-child {
+    display: block;
+}
+nav ul li {
+    display: none;
+}
+#navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active {
+    display: block;
+    margin: 0;
+    padding: 0.5em;
+    text-decoration: none;
+    text-align: center;
+}
+#navigation a:hover {
+    background-color: #D1495B;
+    color: #2A2B2E;
+}
+.active {
+    color:#D1495B;
+    background-color: #FF7D00;
+}
+#navigation.responsive li {
+    display: block;
+}
+main, footer {
+    margin: auto;
+    padding: 0.5em;
+}
+main h2 {
+    text-align: center;
+}
+main div {
+    background-color: #BDB3BA;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 0.5em;
+}
+#forecast {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.forecastTitle {
+    grid-column: -1/1;
+    border: 0px;
+    text-align: center;
+}
+.forecastImages {
+    grid-column: -1/1;
+    border: 0px;
+    margin: 0 auto;
+}
+#forecast img{
+    max-width: 100px;
+}
+#article {
+    height: 100%;
+}
+.articleTitle {
+    border: 0px;
+}
+.articleImg {
+    max-width: 50%;
+    float: right;
+    padding: 0.5em;
+}
+.articleParagraph {
+    border: 0px;
+    padding: 0;
+}
+.clearFloat {
+    clear: both;
+    border:none;
+    padding:0;
+}
+#bannermessage {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    font-size: 2em;
+    background-color: rgb(241, 241, 90);
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+}
+#summary {
+    position: relative;
+    background-image: url("images/pexels-pixabay-325944.jpg");
+    border: none;
+    background-color: transparent;
+    padding:0;
+}
+#weatherSummary {
+    text-align: center;
+}
+.location {
+    max-width: 25px;
+}
+.phone {
+    max-width: 25px;
+}
+.email {
+    max-width: 25px;
+}
+.firstSocial {
+    max-width: 25px;
+}
+.secondSocial {
+    max-width: 25px;
+}
+.thirdSocial {
+    max-width: 25px;
+}
+iframe {
+    width:100%;
+}
+.gmap_canvas {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+footer {
+    text-align: center;
+    background-color: #FF7D00;
+    margin: auto;
+}
+.gallery-grid {
+    display:grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+.loading {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+.lazy-loading {
+    background: none;
+    border: none;
+    grid-gap: 0.5em;
+    text-align: center;
+}
+#form {
+    text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+#star {
+    color: red;
+    font-size: 24px;
+}
+fieldset {
+    border: 1px solid black;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+#radio1, #radio2, #radio3 {
+    padding: 1.5em;
+}
+#textarea {
+    margin: 0 auto;
+}
+.townCards1, .townCards2, .townCards3 {
+    text-align: center;
+    margin: 5% auto;
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px black;
+}
+.townCards1 div, .townCards2 div, .townCards3 div {
+    border: none;
+}
+.townCards1 section, .townCards2 section, .townCards3 section {
+    padding: .5em;
+}
+#firstHeader, #secondHeader, #thirdHeader {
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    line-height: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+#firstMotto, #secondMotto, #thirdMotto {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+@media only screen and (min-width: 37.5em) {
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    main, footer {
+        width: 80%;
+    }
+    main div {
+        background-color: #9AD1D4;
+    }
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #first {
+        grid-column: 1 / 1;
+    }
+    #second {
+        grid-column: 2 / 2;
+    }
+    #third {
+        grid-column: 1 / 1;
+    }
+    #fourth {
+        grid-column: 2 / 2;
+    }
+    #fifth {
+        grid-column: 1 / 1;
+    }
+    #sixth {
+        grid-column: 2 / 2;
+    }
+    #seventh {
+        grid-column: 1 / 1;
+    }
+    #eighth {
+        grid-column: 2 / 2;
+    }
+    #ninth {
+        grid-column: span 2;
+    }
+    .townCards1, .townCards2, .townCards3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .townCards1 section, .townCards3 section {
+        grid-column: 2 / 2;
+    }
+    .townCards1 div, .townCards3 div {
+        grid-column: 1 / 1;
+        margin: 25% auto;
+    }
+    .townCards2 section {
+        grid-column: 1 / 1;
+        grid-row: 1;
+    }
+    .townCards2 div {
+        grid-column: 2 / 2;
+        margin: 25% auto;
+    }
+
+@media only screen and (min-width: 60em) {
+    nav ul {
+        grid-template-columns: repeat(6, auto)
+    }
+    #navigation li {
+        display: block;
+    }
+    #navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active {
+        text-align: center;
+    }
+    #navigation li:first-child {
+        display: none;
+    }
+    main div {
+        background-color: #BDB3BA;
+    }
+    #weatherSummary {
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        background-color: transparent;
+        text-align: center;
+        border: none;
+        color: #FF7D00;
+    }
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #first {
+        grid-column: 1 / 1;
+    }
+    #second {
+        grid-column: 2 / 2;
+    }
+    #third {
+        grid-column: 3 / 3;
+    }
+    #fourth {
+        grid-column: 1 / 1;
+    }
+    #fifth {
+        grid-column: 2 / 2;
+    }
+    #sixth {
+        grid-column: 3 / 3;
+    }
+    #seventh {
+        grid-column: 1 / 1;
+    }
+    #eighth {
+        grid-column: 2 / 2;
+    }
+    #ninth {
+        grid-column: 3 / 3;
+    }
+    .lazy-loading:hover {
+        box-shadow: 5px 5px 10px 10px #D1495B;
+    }
+    footer {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .copyright, .currentDate, .wireframe  {
+        grid-column: 1 / -1;
+    }
+    .gmap_canvas {
+        grid-column: 1 / 1;
+        grid-row: 1 / -1;
+    }
+    #contact {
+        grid-column: 2 / 2;
+        grid-row: 1 / -1;
+        padding-top: 1.5em;
+    }
+    .indexMain {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .townCards1, .townCards2, .townCards3{
+        padding: 1em;
+        margin: 0 5%;
+        display: block;
+    }
+}
+}

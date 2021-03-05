@@ -1,0 +1,39 @@
+body {
+ font-family: ubuntu, sans-serif;
+ font-size: 18px;
+}
+.person {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.info {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 34px;
+    border-bottom: 1px solid black; 
+}
+section {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    grid-column: 1/ 2;
+    grid-row: 1/ 2;
+}
+img {
+    max-width: 800px;
+    width: 100%;
+    margin: 15% auto;
+    text-align: center;
+}
+.person {
+    grid-column: 1 / 1;
+    grid-row: 1;
+    background: rgba(86, 72, 72, 0.224);
+    width: 80%;
+    box-shadow: 10px 10px 20px black;
+    margin: 0 auto;
+}
