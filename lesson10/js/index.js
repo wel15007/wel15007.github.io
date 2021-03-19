@@ -7,7 +7,7 @@ fetch(requestURL)
     console.table(jsonObject);
     const towns = jsonObject['towns'];
 
-    let firstSection = document.createElement('section');
+     let firstSection = document.createElement('section');
     let firstInfo = document.createElement('div');
     let firstHeader = document.createElement('h2');
     let firstMotto = document.createElement('p');
@@ -34,27 +34,27 @@ fetch(requestURL)
     let thirdRain = document.createElement('p');
     let thirdImage = document.createElement('img');
 
-    firstHeader.textContent = towns[1].name;
-    firstMotto.textContent = towns[1].motto;
-    firstYear.textContent = "Year Founded: " + towns[1].yearFounded;
-    firstPopulation.textContent = "Current Population: " + towns[1].currentPopulation;
-    firstRain.textContent = "Annual Average Rainfall: " + towns[1].averageRainfall;
+    firstHeader.textContent = towns[0].name;
+    firstMotto.textContent = towns[0].motto;
+    firstYear.textContent = "Year Founded: " + towns[0].yearFounded;
+    firstPopulation.textContent = "Current Population: " + towns[0].currentPopulation;
+    firstRain.textContent = "Annual Average Rainfall: " + towns[0].averageRainfall;
     firstInfo.setAttribute('id', "card1info");
     firstHeader.setAttribute('id', "firstHeader");
     firstMotto.setAttribute('class', "firstMotto");
-    firstImage.setAttribute('src', "images/" + towns[1].photo);
-    firstImage.setAttribute('alt', "Image of " + towns[1].name);
+    firstImage.setAttribute('src', "images/" + towns[0].photo);
+    firstImage.setAttribute('alt', "Image of " + towns[0].name);
 
-    secondHeader.textContent = towns[5].name;
-    secondMotto.textContent = towns[5].motto;
-    secondYear.textContent = "Year Founded: " + towns[5].yearFounded;
-    secondPopulation.textContent = "Current Population: " + towns[5].currentPopulation;
-    secondRain.textContent = "Annual Average Rainfall: " + towns[5].averageRainfall;
+    secondHeader.textContent = towns[2].name;
+    secondMotto.textContent = towns[2].motto;
+    secondYear.textContent = "Year Founded: " + towns[2].yearFounded;
+    secondPopulation.textContent = "Current Population: " + towns[2].currentPopulation;
+    secondRain.textContent = "Annual Average Rainfall: " + towns[2].averageRainfall;
     secondInfo.setAttribute('id', "card2info");
     secondHeader.setAttribute('id', "secondHeader");
     secondMotto.setAttribute('class', "secondMotto");
-    secondImage.setAttribute('src', "images/" + towns[5].photo);
-    secondImage.setAttribute('alt', "Image of " + towns[5].name)
+    secondImage.setAttribute('src', "images/" + towns[2].photo);
+    secondImage.setAttribute('alt', "Image of " + towns[2].name)
 
     thirdHeader.textContent = towns[6].name;
     thirdMotto.textContent = towns[6].motto;

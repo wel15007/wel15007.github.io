@@ -1,0 +1,51 @@
+body {
+    background-image: url(../images/weather-example-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.title{
+    margin: 0 auto;
+    color: rgb(70, 70, 228);
+    text-align: center;
+}
+#condition {
+    font-size: 24px;
+}
+#current {
+    border: 1px solid grey;
+    border-radius: 15px;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 5px 5px 15px 15px black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#temp{
+    font-size: 30px;
+}
+
+#currentIcon{
+    width: 50%;
+}
+
+#forecast {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#day1, #day2, #day3, #day4, #day5 {
+    border: 1px solid grey;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0.5em;
+    border-radius: 15px;
+    max-width: 100px;
+    margin-top: 20%;
+
+}
