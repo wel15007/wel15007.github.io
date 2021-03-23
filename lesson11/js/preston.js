@@ -38,3 +38,6 @@ function validation() {
     }
     return false;
 }
+function updateTextInput(val) {
+    document.getElementById("textInput").value=val;
+}

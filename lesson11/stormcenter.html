@@ -67,6 +67,11 @@
                 </section>
                 <section>
                 <p><h2>Storm Information</h2></p>
+                <p>
+                    <label for="stormDate">Storm Date:
+                        <input type="date">
+                    </label>
+                </p>
                 <p id="stormType">
                     <label for="stormType">Storm Type: 
                         <input type="text" list="stormList" name="storm type">
@@ -81,7 +86,7 @@
                 </p>
                 <p>
                    <label for="stormSeverity"> Storm Severity: (Range between 1 - 10)
-                       <input type="range" min="1" max="10" step="1" name="storm severity" list="severityList">
+                       <input id="stormSeverity" type="range" min="1" max="10" step="1" name="storm severity" list="severityList" onchange="updateTextInput(this.value);">
                        <datalist id="severityList">
                            <option value="1">1</option>
                            <option value="2">2</option>
@@ -94,6 +99,7 @@
                            <option value="9">9</option>
                            <option value="10">10</option>
                        </datalist>
+                       <input type="text" id="textInput" value="">
                    </label> 
                 </p>
                 <p>
