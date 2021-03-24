@@ -13,7 +13,7 @@ h2, h3 {
 h1, h3 {
     text-transform: uppercase;
 }
-#prestonHeader {
+#header {
     text-transform: uppercase;
 }
 img {
@@ -72,7 +72,7 @@ main, footer {
 main h2 {
     text-align: center;
 }
-#prestonHeader{
+#header{
     color:#f2f3f4;
 }
 main div {
@@ -122,6 +122,8 @@ main div {
     max-width: 400px;
     float: right;
     padding: 0.5em;
+    border-radius: 15%;
+    margin: 0px -10px 0px 0px;
 }
 .articleParagraph {
     border: 0px;
@@ -362,6 +364,16 @@ fieldset {
         text-align: center;
         border: none;
         color: #f2f3f4;
+        font-size: 22px;
+    }
+    #weatherSummary2 {
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        background-color: transparent;
+        text-align: center;
+        border: none;
+        color:#83202D;
         font-size: 22px;
     }
     .gallery-grid {
