@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inns &amp; Suites | Reception</title>
+    <script src="js/currentdate.js"></script>
+    <script src="js/subpages.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="75382-conference-christ-family-latter-day-of-mormon-saints_32x32.ico">
+    <link rel="stylesheet" href="css/templesite.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Lora:ital,wght@1,600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section>
+            <img src="images/75382-conference-christ-family-latter-day-of-mormon-saints.png" alt="temple icon" id="headerImg">
+        </section>
+        <section>
+            <h1>Temple Inns &amp; Suites</h1>
+        </section>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="menu">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html">Temples</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="contact.html">Contact Us!</a></li>
+        </ul>
+    </nav>
+    <main id="receptionPage">
+        <div>
+            <h2>Accommodations and Benefits</h2>
+            <p>If you want to have the hotel to be the place of the venue, these are some of the accommodations that come with the reception service:</p>
+            <ul id="accommodationList">
+                <li>Catering by the Hotel</li>
+                <li>Lobby available for your venue</li>
+                <li>DJ's available from the hotel staff</li>
+                <li>Discout prices for families and friends staying at the inns and suites</li>
+                <li>Average price: $3,000 (compared to an average price of $6,000 outside of our accommodations).</li>
+                <li>Staff sets up venue according to the couple's requests for a low cost</li>
+                <li>And more!</li>
+            </ul>
+        </div>
+        <div>
+            <h2><span id="underline">Reception Form</span></h2>
+            <p id="receptionForm">If you want to learn more or would like to schedule a reception through our company, please complete the form below</p>
+                <form id="receptionForm" onsubmit="return receptionFormValidation()">
+                    <p>
+                        <label for="name">Full Name:</label>
+                        <br>
+                            <input type="text" minlength="5" pattern="[A-z\s]{5,}" required name="full name" title="You cannot use numbers or special characters, only letters and a minimum of 5 letters.">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <br> 
+                            <input type="email" placeholder="example@example.com" name="email" required>
+                    </p>
+                    <p>
+                        <label for="phoneNumber">Phone Number <i id="optional">(optional)</i></label>
+                        <br>
+                            <input type="tel" name="phone number">
+                    </p>
+                    <p>
+                        <label for="receptionDate">When are you having your reception?</label>
+                        <br>
+                            <input type="date" required>
+                    </p>
+                    <p>
+                        <label for="info">Questions or Special Requests</label>
+                            <p>
+                            <textarea name="info" rows="7" cols="50" required></textarea>
+                            </p>
+                    </p>
+                    <p>
+                        <label for="submit"></label>
+                            <input type="submit" id="submitButton" name="submit" value="Submit">
+                    </p>
+                </form>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">&copy; Temple Inns &amp; Suites | Attributions | Tyler Welch</div>
+        <div class="currentDate"><span id="currentdate"></span></div>
+    </footer>
+</body>
+</html>

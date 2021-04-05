@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inns &amp; Suites | Missionaries</title>
+    <script src="js/currentdate.js"></script>
+    <script src="js/subpages.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="75382-conference-christ-family-latter-day-of-mormon-saints_32x32.ico">
+    <link rel="stylesheet" href="css/templesite.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Lora:ital,wght@1,600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section>
+            <img src="images/75382-conference-christ-family-latter-day-of-mormon-saints.png" alt="temple icon" id="headerImg">
+        </section>
+        <section>
+            <h1>Temple Inns &amp; Suites</h1>
+        </section>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="menu">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html">Temples</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="contact.html">Contact Us!</a></li>
+        </ul>
+    </nav>
+<main id="missionariesPage">
+    <div>
+        <h2>Room Types</h2>
+        Below are images of what our rooms look like
+    </div>
+    <section id="rooms">
+        <div id="roomInfo1"><img src="images/standard-room.jpg" loading='lazy' alt="Image of a Standard Room"><h3>Standard Room</h3></div>
+        <div id="roomInfo2"><img src="images/deluxe-room.jpg" loading='lazy' alt="Image of a Deluxe Room"><h3>Deluxe Room</h3></div>
+        <div id="roomInfo3"><img src="images/joint-room.jpg" loading='lazy' alt="Image of a Joint Room"><h3>Joint Room</h3></div>
+        <div id="roomInfo4"><img src="images/mini-suite.jpg" loading='lazy' alt="Image of a Mini Suite"><h3>Mini Suite</h3></div>
+        <div id="roomInfo5"><img src="images/junior-suite.jpg" loading='lazy' alt="Image of a Junior Suite"><h3>Junior Suite</h3></div>
+        <div id="roomInfo6"><img src="images/master-suite.jpg" loading='lazy' alt="Image of a Master Suite"><h3>Master Suite</h3></div>
+        <div id="roomInfo7"><img src="images/apartment-style-room.jpg" loading='lazy' alt="Image of an Apartment Styled room"><h3>Apartment Styled Room</h3></div>
+    </section>
+    <div id="missionaryFormDiv">
+        <h2><span id="underline">Get in contact with our Missionaries!</span></h2>
+        <p>If you have any questions or concerns, or would like to get in contact with our missionaries, please fill out the form below!</p>
+        <form id="missionariesPageForm" onsubmit="return missionaryFormValidation()">
+            <p id="fullName">
+                <label for="fullName">Full Name:</label>
+                    <br>
+                    <input type="text" minlength="5" pattern="[A-z\s]{5,}" required name="full name" title="You cannot use numbers or special characters, only letters and a minimum of 5 letters.">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                    <br>
+                    <input type="email" placeholder="example@example.com" name="email" required>
+            </p>
+            <p>
+                <label for="phoneNumber">Phone Number:</label>
+                    <br>
+                    <input type="tel" required name="phone number">
+            </p>
+            <p>
+                <label for="info">Questions or Comments <i id="optional">(optional)</i></label>
+                    <p>
+                    <textarea name="info" rows="7" cols="50" id="missionaryTextarea"></textarea>
+                    </p>
+            </p>
+            <p>
+                <label for="submit"></label>
+                    <input type="submit" id="submitButton" name="submit" value="Submit">
+            </p>
+        </form>
+    </div>
+</main>
+<footer>
+<div class="copyright">&copy; Temple Inns &amp; Suites | Attributions | Tyler Welch</div>
+<div class="currentDate"><span id="currentdate"></span></div>
+</footer>
+</body>
+</html>

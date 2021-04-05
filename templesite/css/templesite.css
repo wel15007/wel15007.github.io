@@ -1,0 +1,364 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #E7D7C1;
+    margin: 0 auto;
+    font-size: 18px;
+}
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+#underline {
+    text-decoration: underline;
+    text-decoration-color: #336699;
+    text-decoration-thickness: 3px;
+    text-decoration-style:dotted;
+}
+header {
+    background-color: #8C1C13;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#headerImg {
+    max-width: 300px;
+}
+img {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+main, footer {
+    margin: auto;
+    padding: 0.5em;
+}
+main div {
+    width: 80%;
+    background-color: #A78A7F;
+    padding: 0.5em;
+}
+footer {
+    text-align: center;
+    background-color: #8C1C13;
+    margin: auto;
+}
+nav {
+    padding:0;
+    margin:0;
+    background-color:#2F4858;
+    text-transform: uppercase;
+}
+nav ul {
+    list-style-type:none;
+    padding:0;
+    margin: 0;
+    overflow: hidden;
+    display:grid;
+    grid-template-columns: auto;
+}
+nav ul li:first-child {
+    display: block;
+}
+nav ul li {
+    display:none;
+}
+#navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active {
+    display: block;
+    margin: 0;
+    padding: 0.5em;
+    text-decoration:none;
+    text-align:center;
+    color: #e7dfdf;
+}
+#navigation a:hover {
+    background-color:#A78A7F;
+}
+.active {
+    background-color: #336699;
+    color: #e7dfdf;
+}
+#navigation.responsive li {
+    display: block;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+  width:50px;
+}
+li {
+    list-style: circle;
+} 
+#templePage, #indexPage{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+#templePage div{
+    border: 1px solid grey;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0 auto;
+}
+.indexTempleImage {
+    background-color: transparent;
+    border-width: none;
+    margin: auto auto;
+    text-align: center;
+}
+#exampleTemple, #callToActionDiv {
+    border: 1px solid grey;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0 auto;
+}
+#callToAction{
+    font-weight: 600;
+}
+#templePage div section {
+    margin: 3% auto;
+    width: 90%;
+    font-size: 16px;
+}
+#templeInfo, #weather {
+    padding: 1em;
+}
+#montanaWeather, #coloradoWeather, #idahoWeather, #utahWeather {
+    text-transform:capitalize;
+}
+#reservationInfo {
+    border: 1px solid grey;
+    border-radius: 25px;
+    text-align: center;
+    margin:3% auto;
+}
+#personalInfo {
+    border: 1px solid grey;
+    border-radius: 25px;
+    text-align: center;
+    margin:3% auto;
+}
+#personalInfo textarea {
+    width: 90%;
+    margin: 0 auto;
+}
+#reservationButton {
+    background-color:transparent;
+    text-align: center;
+    margin: 0 auto;
+}
+#reservationConfirmed {
+    margin: 0 auto;
+    text-align: center;
+}
+#servicesMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+#servicesMain div {
+    margin: 0 auto;
+}
+#servicesMain div h2 {
+    text-align: center;
+}
+#servicesMain div p button {
+    display:block;
+    margin:0 auto;
+}
+#receptionPage {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:1em;
+}
+#receptionPage div {
+    margin: 0 auto;
+}
+#receptionPage div h2 {
+    text-align: center;
+}
+#receptionForm {
+    text-align: center;
+}
+#receptionForm textarea {
+    width: 90%;
+}
+#receptionConfirmation {
+    margin: 0 auto;
+    text-align: center;
+}
+#missionariesPage {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    text-align: center;
+}
+#missionariesPage div{
+    margin: 0 auto;
+}
+#missionaryTextarea {
+    width: 90%;
+}
+#rooms{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+#missionaryValidationPage {
+    margin: 0 auto;
+    text-align: center;
+}
+#contactPageMap {
+    background-color:transparent;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+iframe {
+    width:100%;
+    border-radius: 25px;
+}
+#contactPageForm {
+    border: 1px solid grey;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0 auto;
+    height: 600px;
+}
+#contactPageForm textarea{
+    width: 90%;
+    margin: 0 auto;
+}
+#contactConformation {
+    margin: 0 auto;
+    text-align: center;
+}
+:required {
+    border-color: red;
+}
+@media only screen and (min-width: 37.5em) {
+    #indexPage {
+        grid-template-columns: 1fr 1fr;
+    }
+    #callToActionDiv{
+        grid-column: 1 / -1;
+    }
+    #servicesMain {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #receptionPage {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:1em;
+    }
+    #receptionForm textarea {
+        max-width: 500px;
+    }
+    #rooms{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        margin: 0 auto;
+    }
+    #rooms div:last-child {
+        grid-column: 1 / -1;
+    }
+    #missionaryTextarea {
+        width: 500px;
+    }
+}
+@media only screen and (min-width: 60em) {
+    #indexPage {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #callToActionDiv {
+        grid-column: 3 / 3;
+        background-color: transparent;
+        border:none;
+    }
+    #callToAction {
+        border: 4px dotted #8C1C13;
+        box-shadow: 10px 10px 30px #2F4858;
+    }
+    nav ul {
+        grid-template-columns: repeat(5, auto);
+    }
+    #navigation li {
+        display:block;
+    }
+    #navigation li:first-child {
+        display:none;
+    }
+    #temple0, #temple1, #temple2, #temple3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.2em;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+    #templeHeader {
+        grid-column: 1 / -1;
+        grid-row: 1 / 1;
+    }
+    #templeInfo {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+    #weather {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+    #weather p {
+        margin: 20% auto;
+    }
+    #reservationMain {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0.5em;
+    }
+    #reservationInfo {
+        grid-column: 1 / 1;
+    }
+    #personalInfo {
+        grid-column: 2 / 2;
+    }
+    #reservationButton {
+        grid-column: 1 / -1;
+    }
+    #servicesMain {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #servicesMain div:last-child {
+        grid-column: 2 / 2;
+    }
+    #rooms{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        margin: 0 auto;
+    }
+    #rooms div:last-child {
+        grid-column: 2 / 2;
+    }
+    #contactMain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #contactPageMap {
+        margin: 5% auto;
+    }
+    #contactPageForm {
+        margin: 5% auto;
+    }
+}

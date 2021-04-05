@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inns &amp; Suites | Reservations</title>
+    <script src="js/currentdate.js"></script>
+    <script src="js/subpages.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="75382-conference-christ-family-latter-day-of-mormon-saints_32x32.ico">
+    <link rel="stylesheet" href="css/templesite.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Lora:ital,wght@1,600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section>
+            <img src="images/75382-conference-christ-family-latter-day-of-mormon-saints.png" alt="temple icon" id="headerImg">
+        </section>
+        <section>
+            <h1>Temple Inns &amp; Suites</h1>
+        </section>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="menu">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html">Temples</a></li>
+            <li><a href="reservation.html" class="active">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us!</a></li>
+        </ul>
+    </nav>
+    <main id="reservationMain">
+        <div id="reservationInfo">
+            <form id="reservationPageForm" onsubmit="return reservationValidation()">
+                <h2><span id="underline">Reservation Information</span></h2>
+                <p>
+                    <label for="location">Destination</label>
+                    <br>
+                    <input type="text" required>
+                </p>
+                <p>
+                    <label for="inDate">Check In Date</label>
+                    <br>
+                    <input type="date" required>
+                </p>
+                <p>
+                    <label for="outDate">Check Out Date</label>
+                    <br>
+                    <input type="date" required>
+                </p>
+                <p>
+                    <label for="typeOfRooms">Room type</label>
+                    <br>
+                    <input type="text" list="roomType" required>
+                    <datalist id="roomType">
+                        <option>Standard</option>
+                        <option>Deluxe</option>
+                        <option>Joint</option>
+                        <option>Mini Suite</option>
+                        <option>Junior Suite</option>
+                        <option>Master Suite</option>
+                        <option>Apartment Style</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="numberOfRooms">Number of Rooms</label>
+                    <br>
+                    <input type="number" required min="1" oninput="validity.valid||(value='');">
+                </p>
+            </div>
+            <div id="personalInfo">
+                <h2><span id="underline">Personal Information</span></h2>
+                <p>
+                    <label for="fullName">Full Name</label>
+                    <br>
+                    <input type="text" minlength="5" pattern="[A-z\s]{5,}" required title="Please enter letters only">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" required placeholder="email@example.com">
+                </p>
+                <p>
+                    <label for="phoneNumber">Phone Number <i id="optional">(optional)</i></label>
+                    <br>
+                    <input type="tel">
+                </p>
+                <p>
+                    <label for="home">What is your home state or country? <i id="optional">(optional)</i></label>
+                    <br>
+                    <input type="text">
+                </p>
+                <p>
+                    <label for="accommodations">Are there any accommodations or additional information we need to know? <i id="optional">(optional)</i></label>
+                    <p>
+                        <textarea rows="7" cols="50"></textarea>
+                    </p>
+                </p>
+            </div>
+            <div id="reservationButton">
+                <p>
+                    <label for="submit">
+                        <input type="submit" id="submitReservation" value="Reserve">
+                    </label>
+                </p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">&copy; Temple Inns &amp; Suites | Attributions | Tyler Welch</div>
+        <div class="currentDate"><span id="currentdate"></span></div>
+    </footer>
+</body>
+</html>
